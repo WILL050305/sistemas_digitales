@@ -1,0 +1,330 @@
+{
+  "historial": {
+    "1765771614": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.48,
+      "timestamp": 1765771614,
+      "voltaje": 0.52
+    },
+    "1765771624": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 199.32,
+      "timestamp": 1765771624,
+      "voltaje": 0.52
+    },
+    "1765771632": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.91,
+      "timestamp": 1765771632,
+      "voltaje": 0.52
+    },
+    "1765771640": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.2,
+      "timestamp": 1765771640,
+      "voltaje": 0.52
+    },
+    "1765771648": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 199.04,
+      "timestamp": 1765771648,
+      "voltaje": 0.52
+    },
+    "1765771655": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.2,
+      "timestamp": 1765771655,
+      "voltaje": 0.52
+    },
+    "1765771664": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 199.89,
+      "timestamp": 1765771664,
+      "voltaje": 0.53
+    },
+    "1765771672": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.63,
+      "timestamp": 1765771672,
+      "voltaje": 0.52
+    },
+    "1765771681": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.2,
+      "timestamp": 1765771681,
+      "voltaje": 0.52
+    },
+    "1765771688": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.5,
+      "timestamp": 1765771688,
+      "voltaje": 0.52
+    },
+    "1765771697": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 199.6,
+      "timestamp": 1765771697,
+      "voltaje": 0.53
+    },
+    "1765771705": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.79,
+      "timestamp": 1765771705,
+      "voltaje": 0.52
+    },
+    "1765771713": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.2,
+      "timestamp": 1765771713,
+      "voltaje": 0.52
+    },
+    "1765771721": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.91,
+      "timestamp": 1765771721,
+      "voltaje": 0.52
+    },
+    "1765771729": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 199.04,
+      "timestamp": 1765771729,
+      "voltaje": 0.52
+    },
+    "1765771738": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.22,
+      "timestamp": 1765771738,
+      "voltaje": 0.52
+    },
+    "1765771746": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 205.23,
+      "timestamp": 1765771746,
+      "voltaje": 0.54
+    },
+    "1765771754": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.79,
+      "timestamp": 1765771754,
+      "voltaje": 0.52
+    },
+    "1765771762": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.76,
+      "timestamp": 1765771762,
+      "voltaje": 0.52
+    },
+    "1765771771": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.22,
+      "timestamp": 1765771771,
+      "voltaje": 0.52
+    },
+    "1765771779": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.2,
+      "timestamp": 1765771779,
+      "voltaje": 0.52
+    },
+    "1765771787": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.07,
+      "timestamp": 1765771787,
+      "voltaje": 0.52
+    },
+    "1765771796": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.07,
+      "timestamp": 1765771796,
+      "voltaje": 0.52
+    },
+    "1765771804": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.22,
+      "timestamp": 1765771804,
+      "voltaje": 0.52
+    },
+    "1765771812": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.07,
+      "timestamp": 1765771812,
+      "voltaje": 0.52
+    },
+    "1765771822": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 199.04,
+      "timestamp": 1765771822,
+      "voltaje": 0.52
+    },
+    "1765771830": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 200.17,
+      "timestamp": 1765771830,
+      "voltaje": 0.53
+    },
+    "1765771838": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.35,
+      "timestamp": 1765771838,
+      "voltaje": 0.52
+    },
+    "1765771846": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.76,
+      "timestamp": 1765771846,
+      "voltaje": 0.52
+    },
+    "1765771854": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 197.35,
+      "timestamp": 1765771854,
+      "voltaje": 0.52
+    },
+    "1765771862": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 206.08,
+      "timestamp": 1765771862,
+      "voltaje": 0.54
+    },
+    "1765771871": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.5,
+      "timestamp": 1765771871,
+      "voltaje": 0.52
+    },
+    "1765771879": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 194.81,
+      "timestamp": 1765771879,
+      "voltaje": 0.51
+    },
+    "1765771887": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 196.22,
+      "timestamp": 1765771887,
+      "voltaje": 0.52
+    },
+    "1765771895": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "BUENA / ACEPTABLE",
+      "tds": 198.2,
+      "timestamp": 1765771895,
+      "voltaje": 0.52
+    },
+    "1765772489": {
+      "accion": "ALERTA TDS ALTO",
+      "estado": "MUY DEFICIENTE - No apta",
+      "tds": 1128.84,
+      "timestamp": 1765772489,
+      "voltaje": 2.31
+    },
+    "1765772501": {
+      "accion": "ALERTA TDS ALTO",
+      "estado": "MUY DEFICIENTE - No apta",
+      "tds": 1129.57,
+      "timestamp": 1765772501,
+      "voltaje": 2.31
+    },
+    "1765772511": {
+      "accion": "ALERTA TDS ALTO",
+      "estado": "MUY DEFICIENTE - No apta",
+      "tds": 1130.3,
+      "timestamp": 1765772511,
+      "voltaje": 2.31
+    },
+    "1765772520": {
+      "accion": "ALERTA TDS ALTO",
+      "estado": "MUY DEFICIENTE - No apta",
+      "tds": 1138.35,
+      "timestamp": 1765772520,
+      "voltaje": 2.32
+    },
+    "1765772992": {
+      "accion": "ALERTA TDS ALTO",
+      "estado": "MUY DEFICIENTE - No apta",
+      "tds": 1137.62,
+      "timestamp": 1765772992,
+      "voltaje": 2.32
+    },
+    "1765773001": {
+      "accion": "ALERTA TDS ALTO",
+      "estado": "MUY DEFICIENTE - No apta",
+      "tds": 1134.68,
+      "timestamp": 1765773001,
+      "voltaje": 2.32
+    },
+    "1765773009": {
+      "accion": "ALERTA TDS ALTO",
+      "estado": "MUY DEFICIENTE - No apta",
+      "tds": 1132.49,
+      "timestamp": 1765773009,
+      "voltaje": 2.31
+    },
+    "ultima_lectura": {
+      "accion": "Monitoreo en tiempo real",
+      "estado": "CRÍTICO - NO APTA (>500 ppm)",
+      "fecha": {
+        "anio": 2025,
+        "dia": 11,
+        "mes": 12
+      },
+      "hora": {
+        "hora": 12,
+        "minuto": 22,
+        "segundo": 15
+      },
+      "tds": 1153.8,
+      "voltaje": 0
+    }
+  },
+  "ultima_lectura": {
+    "accion": "Monitoreo en tiempo real",
+    "estado": "BUENA / ACEPTABLE",
+    "fecha": {
+      "anio": 2025,
+      "dia": 14,
+      "mes": 12
+    },
+    "hora": {
+      "hora": 23,
+      "minuto": 31,
+      "segundo": 51
+    },
+    "tds": 284.84,
+    "voltaje": 0.77
+  }
+}
