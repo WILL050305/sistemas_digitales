@@ -3,6 +3,7 @@ import { database, auth } from './firebase'
 import { ref, onValue } from 'firebase/database'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import * as XLSX from 'xlsx'
+import qrImage from './assets/frame.png'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   const [autenticado, setAutenticado] = useState(false)
   const [paginaActual, setPaginaActual] = useState(1)
   const [alertas, setAlertas] = useState([])
+  const [mostrarQR, setMostrarQR] = useState(false)
   const registrosPorPagina = 20
 
   // Autenticación automática
@@ -201,6 +203,32 @@ function App() {
 
   return (
     <div className="w-full min-h-screen bg-linear-to-br from-slate-900 via-slate-800 to-slate-900">
+      {/* Modal QR Code */}
+      {mostrarQR && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={() => setMostrarQR(false)}>
+          <div className="relative bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 p-6 max-w-sm w-full" onClick={(e) => e.stopPropagation()}>
+            <button
+              onClick={() => setMostrarQR(false)}
+              className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white transition-colors"
+              aria-label="Cerrar"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <h3 className="text-xl font-bold text-slate-100 mb-4 pr-8">Código QR</h3>
+            <div className="bg-white p-4 rounded-lg">
+              <img 
+                src={qrImage} 
+                alt="QR Code" 
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-slate-400 text-sm text-center mt-4">Escanea este código para acceder</p>
+          </div>
+        </div>
+      )}
+
       {/* Alertas laterales */}
       <div className="fixed top-2 right-2 sm:top-4 sm:right-4 z-50 flex flex-col gap-2 sm:gap-3 max-w-[calc(100vw-1rem)] sm:max-w-sm">
         {alertas.map((alerta) => (
@@ -235,13 +263,28 @@ function App() {
               </h1>
               <p className="text-slate-400 text-xs sm:text-sm mt-1">Sistema de Monitoreo TDS en Tiempo Real</p>
             </div>
-            <div className={`px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-medium text-xs sm:text-sm flex items-center gap-2 border whitespace-nowrap
-              ${conectado 
-                ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30' 
-                : 'bg-red-500/10 text-red-400 border-red-500/30'}`}>
-              <span className="w-2 h-2 rounded-full animate-pulse" 
-                    style={{backgroundColor: conectado ? '#10b981' : '#ef4444'}}></span>
-              {conectado ? 'Conectado' : 'Desconectado'}
+            <div className="flex items-center gap-3">
+              {/* Botón QR */}
+              <button
+                onClick={() => setMostrarQR(true)}
+                className="px-3 py-2 sm:px-4 sm:py-2.5 bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white rounded-lg font-medium text-xs sm:text-sm flex items-center gap-2 border border-slate-600 transition-colors"
+                aria-label="Mostrar código QR"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                </svg>
+                <span className="hidden sm:inline">QR</span>
+              </button>
+              
+              {/* Estado de conexión */}
+              <div className={`px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-medium text-xs sm:text-sm flex items-center gap-2 border whitespace-nowrap
+                ${conectado 
+                  ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30' 
+                  : 'bg-red-500/10 text-red-400 border-red-500/30'}`}>
+                <span className="w-2 h-2 rounded-full animate-pulse" 
+                      style={{backgroundColor: conectado ? '#10b981' : '#ef4444'}}></span>
+                {conectado ? 'Conectado' : 'Desconectado'}
+              </div>
             </div>
           </div>
         </div>
