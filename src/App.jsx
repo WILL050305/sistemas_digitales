@@ -384,55 +384,59 @@ function App() {
               </div>
               
               {historial.length > 0 ? (
-                <div className="overflow-x-auto">
+                <>
                   <div className="mb-4 flex items-center justify-between">
                     <div className="text-slate-400 text-sm">
                       Total de registros: <span className="font-bold text-slate-200">{historial.length}</span>
                       {' '} | Página <span className="font-bold text-slate-200">{paginaActual}</span> de <span className="font-bold text-slate-200">{Math.ceil(historial.length / registrosPorPagina)}</span>
                     </div>
                   </div>
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="border-b-2 border-slate-700">
-                        <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Fecha</th>
-                        <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Hora</th>
-                        <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">TDS (ppm)</th>
-                        <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Clasificación</th>
-                        <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Explicación</th>
-                        <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Voltaje</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {historial.slice((paginaActual - 1) * registrosPorPagina, paginaActual * registrosPorPagina).map((registro) => (
-                        <tr key={registro.id} className="border-b border-slate-700/30 hover:bg-slate-700/20 transition-colors">
-                          <td className="py-4 px-4 text-sm text-slate-200 border-r border-slate-700/30">
-                            {registro.fecha.dia}/{registro.fecha.mes}/{registro.fecha.anio}
-                          </td>
-                          <td className="py-4 px-4 text-sm text-slate-200 font-mono border-r border-slate-700/30">
-                            {String(registro.hora.hora).padStart(2, '0')}:
-                            {String(registro.hora.minuto).padStart(2, '0')}:
-                            {String(registro.hora.segundo).padStart(2, '0')}
-                          </td>
-                          <td className="py-4 px-4 border-r border-slate-700/30">
-                            <span className={`text-sm font-bold ${getColorClass(registro.tds)}`}>
-                              {registro.tds}
-                            </span>
-                          </td>
-                          <td className="py-4 px-4 text-sm text-slate-300 border-r border-slate-700/30">
-                            {getClasificacion(registro.tds)}
-                          </td>
-                          <td className="py-4 px-4 text-xs text-slate-400 border-r border-slate-700/30">
-                            {getExplicacion(registro.tds)}
-                          </td>
-                          <td className="py-4 px-4 text-sm text-slate-300">
-                            {registro.voltaje} V
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
                   
-                  {/* Paginación */}
+                  {/* Contenedor con scroll solo para la tabla */}
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-left border-collapse">
+                      <thead>
+                        <tr className="border-b-2 border-slate-700">
+                          <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Fecha</th>
+                          <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Hora</th>
+                          <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">TDS (ppm)</th>
+                          <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Clasificación</th>
+                          <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider border-r border-slate-700/30">Explicación</th>
+                          <th className="py-4 px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Voltaje</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {historial.slice((paginaActual - 1) * registrosPorPagina, paginaActual * registrosPorPagina).map((registro) => (
+                          <tr key={registro.id} className="border-b border-slate-700/30 hover:bg-slate-700/20 transition-colors">
+                            <td className="py-4 px-4 text-sm text-slate-200 border-r border-slate-700/30">
+                              {registro.fecha.dia}/{registro.fecha.mes}/{registro.fecha.anio}
+                            </td>
+                            <td className="py-4 px-4 text-sm text-slate-200 font-mono border-r border-slate-700/30">
+                              {String(registro.hora.hora).padStart(2, '0')}:
+                              {String(registro.hora.minuto).padStart(2, '0')}:
+                              {String(registro.hora.segundo).padStart(2, '0')}
+                            </td>
+                            <td className="py-4 px-4 border-r border-slate-700/30">
+                              <span className={`text-sm font-bold ${getColorClass(registro.tds)}`}>
+                                {registro.tds}
+                              </span>
+                            </td>
+                            <td className="py-4 px-4 text-sm text-slate-300 border-r border-slate-700/30">
+                              {getClasificacion(registro.tds)}
+                            </td>
+                            <td className="py-4 px-4 text-xs text-slate-400 border-r border-slate-700/30">
+                              {getExplicacion(registro.tds)}
+                            </td>
+                            <td className="py-4 px-4 text-sm text-slate-300">
+                              {registro.voltaje} V
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  {/* Paginación - Fuera del contenedor con scroll */}
                   {Math.ceil(historial.length / registrosPorPagina) > 1 && (
                     <div className="flex items-center justify-center gap-2 mt-8">
                       <button
@@ -468,7 +472,7 @@ function App() {
                       </button>
                     </div>
                   )}
-                </div>
+                </>
               ) : (
                 <div className="text-center py-12">
                   <p className="text-slate-400">No hay datos en el historial</p>
